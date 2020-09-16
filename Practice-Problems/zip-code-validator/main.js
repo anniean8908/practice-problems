@@ -1,10 +1,5 @@
 function zipCodeValidator(zipToValidate){
-  if (zipToValidate.length === 5){
-    !isNaN(zipToValidate);
-    return true;
-  } else {
-    return false;
-  }
+  return zipToValidate.length === 5 && !isNaN(zipToValidate)
 }
 
 console.log(zipCodeValidator("21594"));

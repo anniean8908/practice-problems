@@ -1,13 +1,12 @@
 function oddUpEvenDown(array) {
   var result = [];
-  for (var i = 0; i<array.length; i+=2){
-    array[i] = array[i] + 1;
-    array[i+1] = array[i+1] - 1;
-    if(!array[i+1]){
-      result.push(array[i]);
+  for (var i = 0; i<array.length; i++){
+    if(array[i] % 2===0){
+      array[i]--
     } else {
-      result.push(array[i], array[i + 1]);
+      array[i]++
     }
+    result.push(array[i]);
   }
   return result;
 }

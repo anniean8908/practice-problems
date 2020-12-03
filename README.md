@@ -1,2 +1,2 @@
 # practice-problems
-Coding practice.
+Daily Coding practice.
